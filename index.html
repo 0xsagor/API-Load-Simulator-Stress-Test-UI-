@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Load Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>API Load Simulator</h1>
+
+  <input type="text" id="url" placeholder="API endpoint URL">
+  <input type="number" id="concurrency" value="5" min="1" max="50">
+  <input type="number" id="requests" value="20" min="1" max="500">
+
+  <button onclick="run()">Run Load Test</button>
+
+  <ul id="results"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
